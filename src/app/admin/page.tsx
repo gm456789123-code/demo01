@@ -50,7 +50,7 @@ export default function AdminDashboard() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
           {[1, 2, 3].map((i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', paddingBottom: '1rem', borderBottom: '1px solid var(--cms-border)' }}>
-              <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'var(--cms-accent-soft)', display: 'flex', alignItems: 'center', justifyCenter: 'center', fontSize: '1.2rem' }}>
+              <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'var(--cms-accent-soft)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                 📝
               </div>
               <div>
