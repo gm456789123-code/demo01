@@ -1,19 +1,28 @@
 "use client"
 
 import React, { useState } from 'react'
-import { Search, Bell, Sun, Moon, Info } from 'lucide-react'
+import { Search, Bell, Sun, Moon, Info, Menu } from 'lucide-react'
 import { useCMSTheme } from '../context/ThemeContext'
 import styles from './TopNav.module.css'
 
-export default function TopNav() {
+interface TopNavProps {
+  onMenuClick: () => void
+}
+
+export default function TopNav({ onMenuClick }: TopNavProps) {
   const { theme, toggleTheme } = useCMSTheme()
   const [showNoti, setShowNoti] = useState(false)
 
   return (
     <header className={styles.topnav}>
-      <div className={styles.search}>
-        <Search size={18} className={styles.iconBtn} />
-        <input type="text" placeholder="Search..." />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <button className={styles.menuBtn} onClick={onMenuClick}>
+          <Menu size={24} />
+        </button>
+        <div className={styles.search}>
+          <Search size={18} className={styles.iconBtn} />
+          <input type="text" placeholder="Search..." />
+        </div>
       </div>
 
       <div className={styles.actions}>

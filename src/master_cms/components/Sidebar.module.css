@@ -10,8 +10,8 @@
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
-  z-index: 100;
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
 .logo {
@@ -95,4 +95,46 @@
 .logout:hover {
   background-color: rgba(239, 68, 68, 0.1) !important;
   color: var(--cms-danger) !important;
+}
+
+/* Mobile States */
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebarOpen {
+    transform: translateX(0);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    color: var(--cms-text-secondary);
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .closeBtn {
+    display: none;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

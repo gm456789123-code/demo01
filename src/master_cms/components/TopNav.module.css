@@ -143,3 +143,26 @@
   font-size: 0.75rem;
   color: var(--cms-text-secondary);
 }
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cms-text-secondary);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .topnav {
+    left: 0;
+    padding: 0 1rem;
+  }
+  
+  .menuBtn {
+    display: block;
+  }
+  
+  .search {
+    display: none;
+  }
+}
