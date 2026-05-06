@@ -1,5 +1,6 @@
 import React from 'react'
 import CMSLayout from '@/master_cms/components/CMSLayout'
+import MainChart from '@/master_cms/components/MainChart'
 import { FileText, Users, Eye, Plus } from 'lucide-react'
 
 export default function AdminDashboard() {
@@ -42,6 +43,11 @@ export default function AdminDashboard() {
           <div style={{ fontSize: '1.8rem', fontWeight: 800 }}>45.2k</div>
           <div style={{ color: '#10b981', fontSize: '0.8rem', marginTop: '0.5rem' }}>+18% from last month</div>
         </div>
+      </div>
+
+      {/* Main Chart */}
+      <div style={{ marginBottom: '2rem' }}>
+        <MainChart />
       </div>
 
       {/* Recent Activity Mockup */}
