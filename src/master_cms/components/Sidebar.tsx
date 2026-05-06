@@ -1,13 +1,19 @@
 "use client"
 
 import React from 'react'
-import { LayoutDashboard, FileText, Image as ImageIcon, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, FileText, Image as ImageIcon, Settings, LogOut, Sparkles } from 'lucide-react'
 import styles from './Sidebar.module.css'
 
 export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.logo}>Master CMS</div>
+      <div className={styles.logo}>
+        <div className={styles.logoIcon}>
+          <Sparkles size={20} fill="currentColor" />
+        </div>
+        <span className={styles.logoText}>Master CMS</span>
+        <span className={styles.version}>v1.0</span>
+      </div>
       
       <nav className={styles.nav}>
         <div className={`${styles.navItem} ${styles.active}`}>
