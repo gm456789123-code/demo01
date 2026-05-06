@@ -1,0 +1,66 @@
+/* src/master_cms/components/TopNav.module.css */
+.topnav {
+  height: 70px;
+  background-color: var(--cms-bg);
+  border-bottom: 1px solid var(--cms-border);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 90;
+  transition: all 0.3s ease;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: var(--cms-card-bg);
+  border: 1px solid var(--cms-border);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  gap: 0.5rem;
+  width: 300px;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  color: var(--cms-text-primary);
+  outline: none;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconBtn {
+  color: var(--cms-text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.iconBtn:hover {
+  color: var(--cms-accent);
+}
+
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cms-accent) 0%, #8b5cf6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
