@@ -56,3 +56,12 @@
   padding-top: 1rem;
   border-top: 1px solid var(--cms-border);
 }
+
+.logout {
+  color: var(--cms-danger) !important;
+}
+
+.logout:hover {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+  color: var(--cms-danger) !important;
+}

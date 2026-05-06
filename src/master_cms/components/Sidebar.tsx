@@ -29,7 +29,7 @@ export default function Sidebar() {
       </nav>
 
       <div className={styles.footer}>
-        <div className={styles.navItem}>
+        <div className={`${styles.navItem} ${styles.logout}`}>
           <LogOut size={20} />
           <span>Logout</span>
         </div>

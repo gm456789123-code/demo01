@@ -11,7 +11,9 @@
   --cms-border: #e5e7eb;
   --cms-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --cms-icon-color: #3b82f6;
+  --cms-danger: #ef4444;
 }
+
 
 [data-theme='dark'] {
   /* Night Mode (Dark) */
@@ -26,7 +28,9 @@
   --cms-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --cms-icon-color: #60a5fa;
   --cms-glow: 0 0 15px rgba(96, 165, 250, 0.3);
+  --cms-danger: #f87171;
 }
+
 
 /* Base CMS Styles */
 .cms-body {
